@@ -230,6 +230,13 @@ h6 {
   height: 100vh;
   background: url("../img/4k.jpg") top center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Make sure :before positions correctly */
+  overflow: hidden;   /* Ensures background stays neat */
 }
 
 #hero:before {
@@ -246,7 +253,8 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  max-width: 800px;    
+  padding: 0 20px;     
 }
 
 #hero h1 {
